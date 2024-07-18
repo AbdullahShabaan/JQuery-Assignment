@@ -9,6 +9,7 @@ $(() => {
   // Sidebar
   $(".openbtn").on("click", function () {
     $(".sidebar").addClass("open");
+
     $(".home-content").animate({ marginLeft: "250px" }, 400);
   });
   $(".closebtn").on("click", function () {

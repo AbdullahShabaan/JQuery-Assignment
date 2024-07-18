@@ -1,14 +1,16 @@
 body {
   overflow: hidden;
+  overflow-x: hidden;
 }
 /* Start Home */
 #home {
   background-image: url("../images/events-heavenly-header.jpg");
   height: 100vh;
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100%;
   position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 #home .overlay {
   position: absolute;
@@ -139,7 +141,26 @@ ul li a:hover {
     transform: none !important;
     padding: 20px;
   }
+  .contact-info {
+    margin-bottom: 30px !important;
+  }
+  .social-links {
+    text-align: center;
+  }
+  #slider {
+    width: 100% !important;
+  }
+  .sidebar ul li a {
+    font-size: 20px !important;
+  }
+  .sidebar.open {
+    width: 190px;
+  }
+  .openbtn {
+    margin-top: 100px !important;
+  }
 }
+
 /* End Date */
 /* Start Loader */
 .loader-section {
@@ -209,6 +230,9 @@ ul li a:hover {
   font-size: 35px;
   font-weight: 700;
 }
+.heading p {
+  font-weight: 300;
+}
 .contact-info h3 {
   font-size: 18px;
   font-weight: 900;
@@ -225,6 +249,11 @@ ul li a:hover {
   line-height: 42px;
   cursor: pointer;
   text-align: center;
+  transition: 0.4s;
+}
+.social-links i:hover {
+  background-color: #d62e33 !important;
+  color: white !important;
 }
 .chars-number {
   font-size: 20px;
